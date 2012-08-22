@@ -23,7 +23,7 @@ class BeepThread(threading.Thread):
             self.evt.wait(1)
             self.evt.clear()
             if self.value:
-                subprocess.call("beep -f 3800", shell=True)
+                subprocess.call("beep -f 2093", shell=True)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
